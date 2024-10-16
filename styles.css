@@ -69,7 +69,7 @@ h2 {
 }
 
 .skill-icon {
-    width: auto;
+    width: 50px;
     max-height: 50px; /* Restricting height to maintain uniform size */
     margin: 0 15px;
     display: inline-block;
