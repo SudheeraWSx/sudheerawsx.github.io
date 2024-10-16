@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +7,26 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #000;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    text-align: center; /* This centers all the text by default */
+    text-align: center;
 }
 
 .container {
     width: 80%;
-    max-width: 1200px; /* Keeps the width from stretching too wide on larger screens */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Header styling */
 header {
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
 .logo {
@@ -43,19 +47,20 @@ h2 {
 
 .description {
     font-size: 16px;
-    color: #555;
+    color: #bbb;
     margin-bottom: 10px;
 }
 
 .social-link {
     display: inline-block;
     padding: 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     border-radius: 4px;
 }
 
+/* Skills section */
 .skills {
     margin: 40px 0;
 }
@@ -66,32 +71,54 @@ h2 {
     display: inline-block;
 }
 
+/* Project Grid Styling */
+.projects {
+    margin-bottom: 40px;
+}
+
 .projects h3 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.projects .project {
-    margin-bottom: 40px;
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.projects .project img {
-    width: 100%;
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Each card takes about half the width */
     max-width: 400px;
-    margin: 10px 0;
-    border: 1px solid #000;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.projects .project h4 {
+.project-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-card h4 {
     font-size: 20px;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
+/* Footer styling */
 footer {
+    background-color: #e0e0e0;
     padding: 20px 0;
     border-top: 1px solid #ccc;
 }
 
 footer p {
     font-size: 14px;
+    color: #555;
 }
