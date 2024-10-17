@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Gill Sans', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -29,16 +29,15 @@ header {
     color: #fff;
 }
 
-/* Logo image placeholder */
 .logo-img {
     width: 100px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px; /* Reduced gap */
 }
 
 h1 {
     font-family: 'Gill Sans', sans-serif;
-    letter-spacing: 2px; /* Adds spacing between letters */
+    letter-spacing: 3px; /* Increased spacing between letters */
     font-size: 36px;
 }
 
@@ -54,13 +53,10 @@ h2 {
     margin-bottom: 10px;
 }
 
-.social-link {
-    display: inline-block;
-    padding: 10px 15px;
-    border: 1px solid #fff;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 4px;
+/* Social Media Icons */
+.social-icons img {
+    width: 30px;
+    margin: 5px;
 }
 
 /* Skills section */
@@ -69,8 +65,8 @@ h2 {
 }
 
 .skill-icon {
-    width: 50px;
-    max-height: 50px; /* Restricting height to maintain uniform size */
+    width: auto;
+    max-height: 50px; /* Limiting skill icon height to 50px */
     margin: 0 15px;
     display: inline-block;
 }
@@ -82,12 +78,13 @@ h2 {
 
 .projects h3 {
     font-size: 24px;
+    color: #444; /* Dark gray for category names */
     margin-bottom: 20px;
 }
 
 .project-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -115,13 +112,18 @@ h2 {
     margin: 10px 0;
 }
 
-/* See more projects link */
-.see-more {
+/* More Projects Button */
+.more-button {
     display: inline-block;
-    margin-top: 20px;
-    color: #555;
-    text-decoration: none;
+    padding: 10px 20px;
     font-size: 14px;
+    background-color: #777;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 /* Footer styling */
