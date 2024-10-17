@@ -30,19 +30,20 @@ header {
 }
 
 .logo-img {
-    width: 100px;
+    width: 70px;
     height: auto;
     margin-bottom: 1px; /* Reduced gap */
 }
 
 h2 {
     font-family: 'Gill Sans', sans-serif;
-    letter-spacing: 4px; /* Increased spacing between letters */
+    letter-spacing: 6px; /* Increased spacing between letters */
     font-size: 28px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 16px;
+    letter-spacing: 4px;
     font-weight: normal;
     margin: 10px 0;
 }
