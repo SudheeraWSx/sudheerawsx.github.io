@@ -32,16 +32,16 @@ header {
 .logo-img {
     width: 100px;
     height: auto;
-    margin-bottom: 5px; /* Reduced gap */
-}
-
-h1 {
-    font-family: 'Gill Sans', sans-serif;
-    letter-spacing: 3px; /* Increased spacing between letters */
-    font-size: 36px;
+    margin-bottom: 1px; /* Reduced gap */
 }
 
 h2 {
+    font-family: 'Gill Sans', sans-serif;
+    letter-spacing: 4px; /* Increased spacing between letters */
+    font-size: 28px;
+}
+
+h4 {
     font-size: 24px;
     font-weight: normal;
     margin: 10px 0;
@@ -55,6 +55,7 @@ h2 {
 
 /* Social Media Icons */
 .social-icons img {
+    max-height: 30px; /* Limiting skill icon height to 30px */
     width: 30px;
     margin: 5px;
 }
