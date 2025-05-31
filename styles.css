@@ -67,7 +67,10 @@ h4 {
 }
 
 .social-links a:hover {
-    color: #f0f0f0; /* Slightly lighter on hover */
+    color: #000; /* Black text on hover */
+    background-color: #fff; /* White background highlight on hover */
+    padding: 2px 5px; /* Add some padding to make the highlight visible */
+    border-radius: 3px; /* Slightly rounded corners for the highlight */
 }
 
 /* Section styling */
@@ -105,6 +108,30 @@ section p {
     width: auto;
     max-height: 50px; /* Limiting skill icon height to 50px */
     display: inline-block;
+}
+
+/* Placeholder Links below About section */
+.about-links {
+    margin-top: 30px; /* Space above these links */
+    margin-bottom: 20px; /* Space below these links */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+    gap: 20px; /* Space between links */
+}
+
+.about-links a {
+    font-family: 'IBM Plex Mono', monospace; /* Inherit font */
+    font-weight: 400; /* Regular weight */
+    color: #333; /* Black text */
+    text-decoration: underline; /* Underlined text */
+    padding: 8px 15px; /* Padding around text for hover background */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.about-links a:hover {
+    color: #fff; /* White text on hover */
+    background-color: #000; /* Black background on hover */
 }
 
 /* Project Grid Styling */
