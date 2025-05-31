@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace; /* Applying IBM Plex Mono with monospace fallback */
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -25,7 +25,7 @@ header {
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
-    background-color: #333;
+    background-color: #000; /* Dark Black Header */
     color: #fff;
 }
 
@@ -36,39 +36,74 @@ header {
 }
 
 h2 {
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace; /* Ensure font is applied */
     letter-spacing: 6px; /* Increased spacing between letters */
     font-size: 28px;
+    font-weight: 500; /* Medium weight for main heading */
 }
 
 h4 {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure font is applied */
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 400; /* Regular weight for sub-heading */
     margin: 10px 0;
 }
 
 .description {
+    font-weight: 300; /* Light weight for description */
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #fff; /* White color for links in dark header */
+    text-decoration: underline; /* Underlined text links */
+    margin: 0 10px;
+    font-weight: 400; /* Regular weight for links */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f0f0f0; /* Slightly lighter on hover */
+}
+
+/* Section styling */
+section {
+    padding: 40px 0;
+}
+
+section h3 {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure font is applied */
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 500; /* Medium weight for section headings */
+}
+
+section p {
+    font-family: 'IBM Plex Mono', monospace; /* Ensure font is applied */
     font-size: 16px;
-    color: #bbb;
-    margin-bottom: 10px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-weight: 400; /* Regular weight for body text */
 }
 
-/* Social Media Icons */
-.social-icons img {
-    max-height: 30px; /* Limiting social icon height to 30px */
-    width: auto;
-    margin: 5px;
+/* Skill Icons */
+.skill-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
 }
 
-/* Skills section */
-.skills {
-    margin: 40px 0;
-}
-
-.skill-icon {
+.skill-icons img {
     width: auto;
     max-height: 50px; /* Limiting skill icon height to 50px */
-    margin: 0 15px;
     display: inline-block;
 }
 
@@ -81,13 +116,14 @@ h4 {
     font-size: 24px;
     color: #444; /* Dark gray for category names */
     margin-bottom: 20px;
+    font-weight: 500; /* Medium weight for project category headings */
 }
 
 .project-grid {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column; /* Projects one below another */
+    align-items: center; /* Center the cards */
+    gap: 20px; /* Space between project cards */
 }
 
 .project-card {
@@ -95,53 +131,58 @@ h4 {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%; /* 3 cards per row */
-    max-width: 400px;
-    margin-bottom: 20px;
+    width: 80%; /* Adjusted width for single column layout */
+    max-width: 400px; /* Max width for consistency */
+    margin-bottom: 0;
     text-align: center;
 }
 
 .project-card img {
     width: 100%;
     max-width: 300px;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded edges for project images */
     margin-bottom: 10px;
 }
 
 .project-card h4 {
     font-size: 20px;
-    margin: 10px 0;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: 500; /* Medium weight for project titles */
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 auto; /* Center text within card */
+    font-weight: 400; /* Regular weight for project description */
 }
 
 /* More Projects Button */
 .more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: #777;
-    color: white;
+    background-color: #555;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-    text-decoration: none;
+    font-size: 16px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    font-family: 'IBM Plex Mono', monospace; /* Apply font to button */
+    font-weight: 400;
+}
+
+.more-button:hover {
+    background-color: #777;
 }
 
 /* Footer styling */
 footer {
-    background-color: #e0e0e0;
     padding: 20px 0;
-    border-top: 1px solid #ccc;
-}
-
-footer p {
+    margin-top: 40px;
+    background-color: #000; /* Dark Black Footer */
+    color: #fff;
     font-size: 14px;
-    color: #555;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .project-card {
-        width: 100%; /* On mobile view, 1 card per row */
-    }
+    font-weight: 300; /* Light weight for footer text */
 }
