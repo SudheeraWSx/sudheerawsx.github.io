@@ -63,14 +63,16 @@ h4 {
     text-decoration: underline; /* Underlined text links */
     margin: 0 10px;
     font-weight: 400; /* Regular weight for links */
-    transition: color 0.3s ease;
+    padding: 2px 5px; /* Add some padding */
+    border-radius: 0px; /*  */
+    background-color: transparent; /* Ensure no background in normal state */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Add background-color to transition */
 }
 
 .social-links a:hover {
     color: #000; /* Black text on hover */
     background-color: #fff; /* White background highlight on hover */
-    padding: 2px 5px; /* Add some padding to make the highlight visible */
-    border-radius: 3px; /* Slightly rounded corners for the highlight */
+    
 }
 
 /* Section styling */
@@ -122,7 +124,7 @@ section p {
 
 .about-links a {
     font-family: 'IBM Plex Mono', monospace; /* Inherit font */
-    font-weight: 400; /* Regular weight */
+    font-weight: 500; /* Regular weight */
     color: #333; /* Black text */
     text-decoration: underline; /* Underlined text */
     padding: 8px 15px; /* Padding around text for hover background */
