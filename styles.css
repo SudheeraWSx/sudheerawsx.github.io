@@ -87,6 +87,7 @@ section h3 {
     margin-bottom: 30px;
     font-weight: 500; /* Medium weight for section headings */
     min-height: 50px; /* Add this line to maintain consistent height */
+    line-height: 1.2; /* Add this line for consistent vertical spacing */
 }
 
 section p {
