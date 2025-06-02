@@ -30,7 +30,7 @@
 
     <section id="about">
         <div class="container">
-            <h3>Hello!</h3>
+            <h3 id="heading-to-animate">Hello!</h3>
             <p><b>I'm Sudheera,</b> a dedicated Data Science enthusiast with a passion for extracting insights from data and building intelligent solutions. My journey in data science has equipped me with a strong foundation in statistical analysis, machine learning, and data visualization.</p>
             <div class="about-links">
                 <a href="#link1">Research Interests</a>
@@ -109,5 +109,50 @@
             <p>&copy; 2025 Sudheera Semasinghe</p>
         </div>
     </footer>
+    <script>
+        const headingElement = document.getElementById('heading-to-animate');
+        const greetings = ["Hello!", "Bonjour!", "Konnichiwa!", "Ayubowan!", "Wanakkam!", "Hola!"];
+        let greetingIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 150; // Milliseconds per character
+        const deletingSpeed = 100; // Milliseconds per character
+        const delayBeforeNext = 1500; // Delay before starting next action (typing/deleting)
+
+        function animateHeading() {
+            const currentGreeting = greetings[greetingIndex];
+            let displayText = headingElement.textContent;
+
+            if (isDeleting) {
+                // Backspacing
+                displayText = currentGreeting.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                // Typing
+                displayText = currentGreeting.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            headingElement.textContent = displayText;
+
+            let currentTypingSpeed = isDeleting ? deletingSpeed : typingSpeed;
+            if (!isDeleting && displayText === currentGreeting) {
+                // Done typing, set a delay before deleting
+                currentTypingSpeed = delayBeforeNext;
+                isDeleting = true;
+            } else if (isDeleting && displayText === '') {
+                // Done deleting, move to next greeting
+                isDeleting = false;
+                greetingIndex = (greetingIndex + 1) % greetings.length;
+                charIndex = 0; // Reset charIndex for the new word
+                currentTypingSpeed = typingSpeed; // Start typing immediately for next word
+            }
+
+            setTimeout(animateHeading, currentTypingSpeed);
+        }
+
+        // Start the animation when the page loads
+        document.addEventListener('DOMContentLoaded', animateHeading);
+    </script>
 </body>
 </html>
