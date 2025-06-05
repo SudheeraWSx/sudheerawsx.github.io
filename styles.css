@@ -119,9 +119,9 @@ section p {
     margin-top: 30px; /* Space above these links */
     margin-bottom: 20px; /* Space below these links */
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allows links to wrap on smaller screens */
-    gap: 20px; /* Space between links */
+    flex-direction: column; /* This will stack the links vertically */
+    align-items: center; /* This will center the links horizontally */
+    gap: 10px; /* Adjust gap for vertical spacing if needed, reduced from 20px for closer vertical stacking */
 }
 
 .about-links a {
